@@ -870,9 +870,17 @@
         .hero {
           grid-template-columns: 1fr;
           padding: 7rem 1.5rem 3rem;
+          text-align: center;
         }
         .hero-right {
           display: none;
+        }
+        .hero-stats {
+          justify-content: center;
+          gap: 2rem;
+        }
+        .hero-cta {
+          justify-content: center;
         }
         nav {
           padding: 1.25rem 1.5rem;
@@ -893,9 +901,56 @@
           padding: 1.5rem;
         }
       }
+
       @media (max-width: 600px) {
+        .hero {
+          padding: 6rem 1rem 2rem;
+        }
+        .hero-name {
+          font-size: clamp(2.5rem, 8vw, 4rem);
+        }
+        .hero-desc {
+          font-size: 0.9rem;
+          max-width: 100%;
+        }
+        .hero-stats {
+          flex-direction: column;
+          gap: 1.5rem;
+          margin-top: 2rem;
+          padding-top: 1.5rem;
+        }
+        .btn {
+          padding: 0.875rem 1.5rem;
+          font-size: 0.7rem;
+        }
         .projects-grid {
           grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          padding: 5rem 0.75rem 2rem;
+        }
+        .hero-tag {
+          font-size: 0.65rem;
+        }
+        .hero-role {
+          font-size: 0.8rem;
+        }
+        .hero-desc {
+          font-size: 0.85rem;
+          line-height: 1.6;
+        }
+        .hero-cta {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.75rem;
+        }
+        .btn {
+          width: 100%;
+          max-width: 280px;
+          justify-content: center;
         }
       }
     </style>
@@ -971,8 +1026,8 @@
               <div class="tech-pill">LangChain / AI</div>
               <div class="tech-pill highlight">Tailwind CSS</div>
               <div class="tech-pill">TypeScript</div>
-              <div class="tech-pill">React / Three.js</div>
-              <div class="tech-pill">Node.js / Docker</div>
+              <div class="tech-pill">Google Cloud Console</div>
+              <div class="tech-pill">Cloud Computing</div>
             </div>
           </div>
         </div>
